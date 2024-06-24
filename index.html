@@ -12,10 +12,12 @@
 <body>
     <h1>Rejseplanen API Example</h1>
     <label for="startLocationInput">Enter start location:</label>
-    <input type="text" id="startLocationInput" placeholder="Type start location">
+    <input type="text" id="startLocationInput" list="startSuggestions" placeholder="Type start location">
+    <datalist id="startSuggestions"></datalist>
     <br>
     <label for="stopLocationInput">Enter stop location:</label>
-    <input type="text" id="stopLocationInput" placeholder="Type stop location">
+    <input type="text" id="stopLocationInput" list="stopSuggestions" placeholder="Type stop location">
+    <datalist id="stopSuggestions"></datalist>
     <br>
     <button id="fetchDataButton">Fetch Location Data</button>
     <pre id="result"></pre>
