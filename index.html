@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rejse Plan</title>
+    <title>Rejseplanen</title>
     <link rel="stylesheet" href="assets/styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <h1>Fetching Location Data for Denmark</h1>
-    <p>Check the console for results.</p>
+    <h1>Rejseplanen API Example</h1>
+    <label for="startLocationInput">Enter start location:</label>
+    <input type="text" id="startLocationInput" placeholder="Type start location">
+    <br>
+    <label for="stopLocationInput">Enter stop location:</label>
+    <input type="text" id="stopLocationInput" placeholder="Type stop location">
+    <br>
+    <button id="fetchDataButton">Fetch Location Data</button>
+    <pre id="result"></pre>
 </body>
+
 </html>
